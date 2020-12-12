@@ -79,9 +79,10 @@ public class Main
         {
             File file1 = new File(String.valueOf(name + ".txt"));
             FileWriter fileWriter = new FileWriter(file1, false);
-            name = list.get(i1).Name;
-            surname = list.get(i1).Surname;
-            age = list.get(i1).Age;
+
+//            name = list.get(i1).Name;
+//            surname = list.get(i1).Surname;
+//            age = list.get(i1).Age;
 
             fileWriter.write(name + ", " + surname + ", " + age);
             fileWriter.close();
@@ -102,7 +103,7 @@ public class Main
 
 
         String path = "1.txt";
-        double balance = 17;
+        double balance = 17.34;
         int account_number = 12;
         Test2(account_number, balance, path);
     }
